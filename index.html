@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- HTML5のドキュメントを宣言するタグです。 -->
+<html lang="ja">
+<!-- HTMLコンテンツの言語が日本語であることを示します。 -->
+<head>
+  <meta charset="UTF-8">
+  <!-- 文字エンコーディングがUTF-8であることをブラウザに指示します。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- レスポンシブデザインを可能にするため、ビューポートをユーザーのデバイスの幅に合わせます。 -->
+  
+  <title>apu</title>
+  <!-- ウェブページのタイトルを設定します。ブラウザのタブに表示されます。 -->
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- ブラウザごとのデフォルトスタイルの違いを解消するためのリセットCSSを適用します。 -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- カスタムスタイルを適用するための外部CSSファイルをリンクします。 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+<!-- ウェブページのコンテンツ全体を含むタグです。 -->
+
+  <header>
+  <!-- ページのヘッダー部分を定義するタグです。通常、ロゴやナビゲーションバーが含まれます。 -->
+    <div class="container">
+    <!-- Flexboxを使用して中央配置やアイテムの整列を容易にするためのクラスです。 -->
+      <a class="logotext" href="./"><img src="images/headlogo.png"></a>
+      <!-- ホームページへのリンクとして機能する会社のロゴまたはテキストを設定します。 -->
+      <nav>
+      <!-- ナビゲーションバーを定義するためのタグです。主にリンクの集合を持ちます。 -->
+        <ul class="navflex">
+        <!-- Flexboxを適用してナビゲーションアイテムを横並びに整列させるためのクラスです。 -->
+          <li class="navitem"><a href="#About">Section 1</a></li>
+          <li class="navitem"><a href="#section3">Section 3</a></li>
+          <li class="navitem"><a href="#section5">Section 5</a></li>
+          <!-- ナビゲーションアイテムとして機能するリストアイテム。クリックすると指定したセクションへスムーススクロールします。 -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ページの主要なコンテンツを含むタグです。ここには、記事、画像、ビデオなどが含まれます。 -->
+      <section id="section1">
+      <!-- 特定のトピックのコンテンツをまとめるためのセクション。IDを使用してナビゲーションリンクと連携します。 -->
+        <div class="container">
+        <!-- コンテンツを中央に配置し、最大幅を制限するために使用されるラッパー(wrapper:包むもの)のクラスです。 -->
+          <div class="row">
+          <!-- Flexboxを使用して子要素を横並びに配置するためのクラスです。 -->
+            <div class="col d2 m1">
+            <!-- デスクトップとモバイルでのレイアウトを制御するためのクラス。ここではデスクトップで全幅、モバイルでも全幅を取ります。 -->
+            <!-- centerに属させることで中のテキストを中央に寄せます　-->
+              <h1>Welcome to APU</h1>
+            
+              <p>世界レベルのグローバル環境・教育プログラムでグローバル社<br>会を生き抜く行動力を身につけよう！</p>
+
+              <a href="#About">
+                <!-- リンク要素、クリックするhrefで指定したURLへ移動します。 -->
+                <button>
+                      <!-- ボタン要素 -->
+                    APUについて <!-- ボタン上に表示されるテキストです。 -->
+                </button>
+
+              </a>
+              
+              <!-- 各カラムの内容を示すパラグラフ。レスポンシブデザインの説明を含みます。 -->
+            </div>
+
+            <div class = "col d2 m1">
+              <img src = "images/mainvis.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+        <section id = "About">
+          <div class="container">
+            <h1>About APU</h1>
+            <h3>大学について</h3>
+            <div class="row">
+                <div class="col d2 m1">
+                    <img src = "images/about.jpg">
+                </div>
+                <div class="col d2 m1">
+                  <h2>「自由・平和・ヒューマニティ」「国際相互<br>理解」「アジア太平洋の未来創造」を体現<br>した多文化環境</h2>
+                  <p>APUは、「自由・平和・ヒューマニティ」「国際相互理解」「アジア太平洋の未来創造」を基本理念として誕生しました。開学時から「学生の50%を留学生に、出身国を50カ国・地域以上に、教員の50%を外国人に」という構想を打ち出し、他に類を見ない多文化環境の中で学ぶ、真のグローバル大学を実現するという高い目標を掲げました。開学以来20年。国際学生を受け入れた国・地域は163カ国・地域に上り、現在も102カ国・地域から来た学生たちが学んでいます。さらに、APUは2030年に向けて「APUで学んだ人たちが世界を変える」というビジョンを掲げ、世界に誇るグローバル・ラーニング・コミュニティの創成に向けて歩み続けています。</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+              <h1>Faculties</h1>
+              <h3>選べる3つの学部</h3>
+                <div class="row">
+                    <div class="col d3 m1" id = "red-box">
+                      <img src = "images/offer_01.jpg">
+                      <h4>アジア太平洋学部</h4>
+                      <h5>Collage of Asia Pasific Studies</h5>
+                        <!-- デスクトップとモバイルでのレイアウトを制御するためのクラス。ここではデスクトップで1/3の幅、モバイルでは全幅を取ります。 -->
+                      <p>アジアから世界を引率せよ。</p>
+
+                    </div>
+                    <div class="col d3 m1 center" id="orange-box">
+                      <img src = "images/offer_02.jpg">
+                      <h4>国際経営学部</h4>
+                      <h5>Collage of International Management</h5>
+                        <p>ビジネスにまだないイノベーションを。</p>
+                        
+                    </div>
+                    <div class="col d3 m1" id = "blue-box">
+                      <img src = "images/offer_03.jpg">
+                      <h4>サステイナビリティ観光学部</h4>
+                      <h5>College of Sustainability and Tourism</h5>
+                        <p>地球の力が世界の力になる。</p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+      <section>
+        <div class="container">
+          <h1>Cumpus Life</h1>
+          <h3>キャンパスライフ</h3>
+            <div class="row">
+                <div class="col d2 m1">
+                  <img src="images/menu_festival.jpg">
+
+                </div>
+                <div class="col d2 m1">
+                  <h2>各国地域の文化を紹介するイベントを毎週のように開催</h2>
+                  <p>マルチカルチュラル・ウィークは年間を通して開催される、APUの中でも代表的なイベントです。さまざまな国・地域の音楽、衣装、スポ一ツ、踊りや言語などあらゆる文化を、一週間を通してたっぷりと味わえます。イベントの企画・運営はすべて学生が行い、多くの国際学生・国内学生が出身国・地域に関係なく交流しています。学生は日々の運営を通して人脈を広げ、社会の中で必要なスキルを磨きます。</p> 
+                
+                    
+                </div>
+                <div class="col d2 m1">
+                  <h2>APUは課外活動もインターナショナル</h2>
+                  <p>APUでの学生生活、過ごし方はさまざまです。クラブ・サークルには誰でも自由に入ることができ、また自分たちで新たに団体を作ることもできます。（年2回春・秋）勉強やゼミに打ち込む、留学にいく、サークルやプロジェクトに取り組む、マルチカルチュラル・ウィークや天空祭などAPUでの行事を彩る、大学を支える学生スタッフをする、海外ボランティアにいく、別府のコミュニティーや温泉にどっぷりつかる、スポーツやビジネスコンペで全国・世界大会に出場するなど、4年間の過ごし方は百人百様です。</p>
+                
+                    
+                </div>
+                <div class="col d2 m1">
+                  <img src="images/menu_campuslife.jpg">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section5">
+      <div class="container">
+        <h1>Wxploring APU</h1>
+        <h3>APUをもっと知る</h3>
+          <div class="row">
+              <div class="col d4 m2">
+                <img src="images/menu_ataglance.jpg">
+                <h3>一目でわかるAPU</h3>
+                <p>世界が集まる大学、<br>APUを知る。</p>
+                <a href="https://www.apumate.net/exploring/ataglance/"> 
+                  <button>
+                      さらに詳しく
+                  </button>
+                </a>
+              </div>
+              <div class="col d4 m2">
+                <img src="images/menu_student.jpg">
+                <h3>インタビュー</h3>
+                <p>APUのグローバルな<br>仲間たちを見てみよう。</p>
+                <a href="https://www.apumate.net/exploring/student_interviews/"> 
+                  <button>
+                      さらに詳しく
+                  </button>
+                </a>
+              </div>
+              <div class="col d4 m2">
+                <img src="images/menu_abroad.jpg">
+                <h3>留学・海外学習</h3>
+                <p>キャンパス外での学びと実践の機会を<br>提供するプログラム。</p>
+                <a href="https://www.apu.ac.jp/abroad/"> 
+                  <button>
+                      さらに詳しく
+                  </button>
+                </a>
+              </div>
+              <div class="col d4 m2">
+                <img src="images/menu_pamphlet.jpg">
+                <h3>デジタルパンフレット</h3>
+                <p>大学案内を<br>ダウンロードする</p>
+                <a href="https://www.apumate.net/admissions_guide/download/2024/book.html"> 
+                  <button>
+                      さらに詳しく
+                  </button>
+                </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+      </main>
+
+      <footer>
+        <!-- ページのフッターを定義するタグ。コピーライト情報などが含まれることが多いです。 -->
+          <div class="logo">
+          <!-- フッターに表示するロゴまたはテキストのためのコンテナ。 -->
+            Company Name
+          </div>
+          Copyright © 2024 Company Name Inc. All rights reserved.
+          <!-- 著作権情報を表示します。 -->
+        </footer>
+
+
+
+
+</body>
+
+</html>
